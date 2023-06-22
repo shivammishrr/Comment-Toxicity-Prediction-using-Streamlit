@@ -7,7 +7,7 @@ import pandas as pd
 model = tf.keras.models.load_model('toxicity.h5')
 
 # Load the data and define X and y
-df = pd.read_csv(r"C:\Shivam\Data Science Projects\jigsaw-toxic-comment-classification-challenge\train.csv.zip")
+df = pd.read_csv(r"https://raw.githubusercontent.com/shivammishrr/Comment-Toxicity-Prediction-using-Streamlit/main/train.csv.zip")
 X = df['comment_text']
 y = df[df.columns[2:]].values
 
